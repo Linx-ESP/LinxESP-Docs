@@ -39,9 +39,6 @@ extra:
 ##  - name: English (WIP)
 ##    link: /en/
 #    lang: en 
-  analytics:
-    provider: google
-    property: G-FQ1569YGYJ
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Linx-ESP
