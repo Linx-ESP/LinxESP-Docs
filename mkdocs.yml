@@ -1,0 +1,53 @@
+site_name: Linx Docs
+
+theme:
+  language: es
+  logo: assets/linx.png
+  favicon: assets/linx.png
+
+  name: material
+  palette: 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate 
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+#    - toc.integrate #Navegación dentro del archivo. Disable = columna a la derecha
+
+extra:
+#  alternate:
+#  - name: Español (Original)
+#    link: /
+#    lang: es 
+##  - name: English (WIP)
+##    link: /en/
+#    lang: en 
+  analytics:
+    provider: google
+    property: G-FQ1569YGYJ
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Linx-ESP
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
