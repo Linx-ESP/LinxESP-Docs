@@ -533,9 +533,14 @@
 
 <h1 id="eliminar-pixel-art-wip">Eliminar Pixel Art [WIP]</h1>
 <h2 id="reshade">Reshade</h2>
-<p>Reshade es una herramienta que permite aplicar filtros de postprocesado, o incluso efectos si puede usar el búfer de profundidad<br />
-En el caso de juegos Pixel Art, xBRZ es un filtro que permite mezclar los pixeles para formar una imagen con el mismo estilo<br />
-Otro filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor)</p>
+<p>Reshade es una herramienta que permite aplicar filtros de postprocesado, o incluso efectos si puede usar el búfer de profundidad.<br />
+En el caso de juegos Pixel Art, xBRZ es un filtro de escalado que permite mezclar los pixeles mantenieno el estilo artístico.<br />
+Otros filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor resultado).<br />
+Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... O un filtro que lo imite.</p>
+<div class="admonition question">
+<p class="admonition-title">¿CRT o xBRZ?</p>
+<p>Debido al efecto que generan ambos filtros no parece que haya beneficio por usar ambos a la vez, pero siéntete libre de probar.</p>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Instalar</label><label for="__tabbed_1_2">Usar</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -543,7 +548,8 @@ Otro filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor)</p>
 <li><a href="https://reshade.me/">Descarga</a> y ejecuta el instalador de Reshade</li>
 <li>Busca el juego o añadelo manualmente. Haz click en <code>Next</code>.</li>
 <li>Selecciona la API gráfica que corresponda <a href="#lista-de-juegos">Ver aquí</a>.  </li>
-<li>Selecciona <code>Install</code>.  </li>
+<li>Selecciona <code>Install</code>.</li>
+<li>Marca <code>RSRetroArch by Matsilagi</code>.</li>
 <li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y haz clock en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
 <li>Haz click en <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
 </ul>
@@ -554,11 +560,16 @@ Otro filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor)</p>
 <li>Selecciona <code>Continue</code> si quieres ver el tutorial (5 pasos), <code>Skip the tutorial</code> si no.</li>
 <li>Activa <code>xBRZx4</code></li>
 <li>En la parte inferior, <code>Strength</code> equivale al multiplicador de escalado.<ul>
-<li>Multiplicador = Resolución vertical del monitor / Resolución de la cuadrícula del pixel art</li>
+<li>Multiplicador = Resolución vertical del monitor / Resolución del pixel art</li>
 <li>Ejemplo: Monitor 2560x1440p en Celeste sería:<ul>
-<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong> </li>
+<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong></li>
 </ul>
 </li>
+</ul>
+</li>
+<li>Alternativamente, activa <code>Advanced CRT</code><ul>
+<li><code>Amount</code>: A gusto</li>
+<li><code>Resolution</code>: Multiplicador (Resolución de pantalla / Resolución del pixel art)</li>
 </ul>
 </li>
 </ul>
@@ -580,16 +591,26 @@ Otro filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor)</p>
 </ul>
 </li>
 <li>Pixela automáticamente modelos en 3D para mantener la estética</li>
-<li>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </li>
 </ul>
+<div class="admonition success">
+<p class="admonition-title">Mejores resultados</p>
+<p>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </p>
+</div>
 </div>
 <div class="tabbed-block">
 <ul>
 <li>Los pixeles no se alinean una cuadrícula </li>
-<li>Respetan la resolución de pantalla  </li>
+<li>Respeta la resolución de pantalla<ul>
+<li>Con lo que un filtro de escalado como xBRZ no podrá funcionar correctamente  </li>
+</ul>
+</li>
 <li>Movimiento suave de cámara</li>
 <li>Usar filtros de escalado puede no ser eficaz o generar artefactos en movimiento.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Calidad imprevisible</p>
+<p>Juegos con este método puede no ser buenos candidatos a usar xBRZ o filtro de CRT, pudiendo generar parpadeo o artefactos en movimiento o quedando "desenfocados".</p>
+</div>
 </div>
 </div>
 </div>
@@ -608,9 +629,11 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 </div>
 </div>
 </div>
-<ul>
-<li>Para usar un filtro como xBRZ es altamente recomendable configurar el juego para que use una resolución que sea múltiplo del Pixel Art. </li>
-</ul>
+<div class="admonition info">
+<p class="admonition-title">Resolución proporcional</p>
+<p>Para usar un filtro como xBRZ o CRT es recomendable configurar el juego para que use una resolución que sea múltiplo del Pixel Art.<br />
+Por ejemplo para Hyper Light Drifter, en vez de usar x2,6667@1440p, jugar a 1080p y usar x2 en los filtros.</p>
+</div>
 <hr />
 <h2 id="lista-de-juegos">Lista de Juegos</h2>
 <table>
@@ -634,7 +657,7 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 <tr>
 <td>Hyper Light Drifter</td>
 <td>DirectX 9</td>
-<td>Retro</td>
+<td>Retro*</td>
 <td>540p</td>
 <td></td>
 </tr>
@@ -697,8 +720,15 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 </tbody>
 </table>
 <p><code>*</code>: Puede no ser correcto.  </p>
-<p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
+<div class="admonition info encontrar la api gráfica">
+<p class="admonition-title">Info</p>
+<p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.<br />
+Otra opción más avanzada es usar el overlay MSI Afterburner / HWinfo64 y mostrar la API</p>
+</div>
+<div class="admonition tip emuladores">
+<p class="admonition-title">Tip</p>
 <p>Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.</p>
+</div>
 
               
             </article>
