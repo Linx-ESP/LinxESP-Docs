@@ -208,18 +208,11 @@
   
   
   
-    
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Mkdocs/" class="md-tabs__link md-tabs__link--active">
         Guias
       </a>
     </li>
-  
-
   
 
       
@@ -304,6 +297,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -322,6 +317,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/" class="md-nav__link">
+        Mkdocs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -329,7 +338,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       
       
@@ -338,13 +347,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_1">
+        <label class="md-nav__link" for="__nav_3_2">
           Juegos
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Juegos" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_1">
+        <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Juegos
         </label>
@@ -418,22 +427,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#estilo-retro" class="md-nav__link">
-    Estilo Retro:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estilo-moderno" class="md-nav__link">
-    Estilo Moderno:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sin-antialiasingno-aa-a-veces-llamada-pixel-perfect" class="md-nav__link">
-    Sin Antialiasing/No AA (a veces llamada pixel-perfect)
+  <a href="#antialiasing-y-pixel-art" class="md-nav__link">
+    Antialiasing y Pixel Art
   </a>
   
 </li>
@@ -527,22 +522,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#estilo-retro" class="md-nav__link">
-    Estilo Retro:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estilo-moderno" class="md-nav__link">
-    Estilo Moderno:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sin-antialiasingno-aa-a-veces-llamada-pixel-perfect" class="md-nav__link">
-    Sin Antialiasing/No AA (a veces llamada pixel-perfect)
+  <a href="#antialiasing-y-pixel-art" class="md-nav__link">
+    Antialiasing y Pixel Art
   </a>
   
 </li>
@@ -604,32 +585,46 @@
 <h2 id="estilo-de-renderizado">Estilo de renderizado</h2>
 <p>Básicamente hay "2" maneras de renderizar un juego pixel art.<br />
 <a href="https://www.youtube.com/watch?v=jguyR4yJb1M">Explicación, 3 min.</a>  </p>
-<h5 id="estilo-retro">Estilo Retro:</h5>
-<pre><code>- Los pixeles del juego se alinean a una cuadrícula
-- Similar a como funcionaban antiguamente  
-- Equivalente a renderizar en menor resolución y escalar*  
-    - Este escalado es el que se puede usar para eliminar el "Pixel art"  
-- Animaciones 3D pixeladas perfectamente
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Estilo Retro</label><label for="__tabbed_1_2">Estilo Moderno</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
+<li>Todos los pixeles del juego se alinean en una sola cuadrícula</li>
+<li>Similar a como funcion juegos viejos </li>
+<li>Equivalente a renderizar en menor resolución y <strong>escalar</strong>  <ul>
+<li>Este escalado es el que se puede usar para eliminar el "Pixel art"  </li>
+</ul>
+</li>
+<li>Pixela automáticamente modelos en 3D para mantener la estética</li>
 <li>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </li>
 </ul>
-<h5 id="estilo-moderno">Estilo Moderno:</h5>
-<pre><code>- Los pixeles no se alinean  
-- Respetan la resolución de pantalla  
-- Movimiento suave de cámara
-- Puede ser un juego 3D simulando ser 2D
-</code></pre>
+</div>
+<div class="tabbed-block">
 <ul>
+<li>Los pixeles no se alinean una cuadrícula </li>
+<li>Respetan la resolución de pantalla  </li>
+<li>Movimiento suave de cámara</li>
 <li>Usar filtros de escalado puede no ser eficaz o generar artefactos en movimiento.</li>
 </ul>
-<h5 id="sin-antialiasingno-aa-a-veces-llamada-pixel-perfect">Sin Antialiasing/No AA (a veces llamada pixel-perfect)</h5>
-<pre><code>- Al escalar a resoluciones grandes el juego no suaviza los bordes
-- Causa que el pixel art parezca no respete la cuadrícula original
-</code></pre>
+</div>
+</div>
+</div>
+<h4 id="antialiasing-y-pixel-art">Antialiasing y Pixel Art</h4>
+<p><img alt="Test" src="/docs/assets/AA_y_escalado.webp" /></p>
+<p>Al usar resoluciones que no sean múltiplos del Pixel Art del juego ocurrir dos cosas</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Con antialias</label><label for="__tabbed_2_2">Sin antialiasing</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Suaviza los bordes</p>
+</div>
+<div class="tabbed-block">
+<p>Bordes pixelados<br />
+Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado correctamente</p>
+</div>
+</div>
+</div>
 <ul>
-<li>Para eliminar el pixel art de un juego retro <strong>con AA</strong>, lo mejor es ejecutar el juego en la resolución nativa del pixel art o múltiplos (Pixel Art 480p -&gt; Juego 960p / 1440p).<br />
-Es posible que aún así no sea posible que quede bien.</li>
+<li>Para usar un filtro como xBRZ es altamente recomendable configurar el juego para que use una resolución que sea múltiplo  </li>
 </ul>
 <hr />
 <h2 id="lista-de-juegos">Lista de Juegos</h2>
@@ -737,7 +732,7 @@ Es posible que aún así no sea posible que quede bien.</li>
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../../../tags/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Tags" rel="prev">
+        <a href="../../Mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Mkdocs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -746,7 +741,7 @@ Es posible que aún así no sea posible que quede bien.</li>
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Tags
+              Mkdocs
             </div>
           </div>
         </a>
