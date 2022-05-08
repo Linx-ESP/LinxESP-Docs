@@ -580,13 +580,26 @@
 <h2 id="instalar-y-usar-reshade">Instalar y usar Reshade</h2>
 <ul>
 <li><a href="https://reshade.me/">Descarga</a> y ejecuta el instalador de Reshade</li>
-<li>Busca el juego o añadelo manualmente. Clica <code>Next</code>.</li>
+<li>Busca el juego o añadelo manualmente. Haz click en <code>Next</code>.</li>
 <li>Selecciona la API gráfica que corresponda [ver más abajo].  </li>
 <li>Selecciona <code>Install</code>.  </li>
-<li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y clica en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
-<li>Clica <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
+<li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y haz clock en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
+<li>Haz click en <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
 </ul>
 <h3 id="una-vez-en-el-juego">Una vez en el juego:</h3>
+<ul>
+<li>Pulsa la tecla <code>Home</code> desplegar el overlay de Reshade.</li>
+<li>Selecciona <code>Continue</code> si quieres ver el tutorial (5 pasos), <code>Skip the tutorial</code> si no.</li>
+<li>Activa <code>xBRZx4</code></li>
+<li>En la parte inferior, <code>Strength</code> equivale al multiplicador de escalado.<ul>
+<li>Multiplicador = Resolución vertical del monitor / Resolución de la cuadrícula del pixel art</li>
+<li>Ejemplo: Monitor 2560x1440p en Celeste sería  <ul>
+<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="estilo-de-renderizado">Estilo de renderizado</h2>
 <p>Básicamente hay "2" maneras de renderizar un juego pixel art.<br />
@@ -615,7 +628,8 @@
 - Causa que el pixel art parezca no respete la cuadrícula original
 </code></pre>
 <ul>
-<li>Para eliminar el pixel art de un juego retro sin AA, lo mejor es ejecutar el juego en la resolución nativa del pixel art. Es díficil de eliminar a mayor resolución porque no todos los pixeles de los elementos in-game miden lo mismo.</li>
+<li>Para eliminar el pixel art de un juego retro <strong>con AA</strong>, lo mejor es ejecutar el juego en la resolución nativa del pixel art o múltiplos (Pixel Art 480p -&gt; Juego 960p / 1440p).<br />
+Es posible que aún así no sea posible que quede bien.</li>
 </ul>
 <hr />
 <h2 id="lista-de-juegos">Lista de Juegos</h2>
@@ -625,26 +639,16 @@
 <th>Juegos</th>
 <th>API gráfica</th>
 <th>Estilo</th>
-<th>Res. Interna**</th>
-<th>Mult. 1440p</th>
+<th>Res. Cuadrícula</th>
 <th>Notas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Stardew Valley</td>
-<td>OpenGL</td>
-<td>Moderno</td>
-<td>360p</td>
-<td>x4</td>
-<td></td>
-</tr>
-<tr>
 <td>Celeste</td>
 <td>DirectX 11</td>
 <td>Retro</td>
 <td>180p</td>
-<td>x8</td>
 <td>Contiene segmentos en 3D</td>
 </tr>
 <tr>
@@ -652,7 +656,13 @@
 <td>DirectX 9</td>
 <td>Retro</td>
 <td>540p</td>
-<td>x2,66</td>
+<td></td>
+</tr>
+<tr>
+<td>Stardew Valley</td>
+<td>OpenGL</td>
+<td>Moderno</td>
+<td>360p</td>
 <td></td>
 </tr>
 <tr>
@@ -660,7 +670,6 @@
 <td>DirectX 9</td>
 <td>Moderno</td>
 <td>240p</td>
-<td>x6</td>
 <td></td>
 </tr>
 <tr>
@@ -668,7 +677,6 @@
 <td>DirectX 9</td>
 <td>Moderno</td>
 <td>360p</td>
-<td>x4</td>
 <td></td>
 </tr>
 <tr>
@@ -676,7 +684,6 @@
 <td>DirectX 11</td>
 <td>Moderno</td>
 <td>360p</td>
-<td>x4</td>
 <td></td>
 </tr>
 <tr>
@@ -684,23 +691,6 @@
 <td>DirectX 11</td>
 <td>Moderno</td>
 <td>288p</td>
-<td>x5</td>
-<td></td>
-</tr>
-<tr>
-<td>Moonlighter</td>
-<td>DirectX 11</td>
-<td>Moderno /No AA</td>
-<td>720p</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Children of Morta</td>
-<td>DirecX 11</td>
-<td>Retro* / No AA</td>
-<td>720p</td>
-<td></td>
 <td></td>
 </tr>
 <tr>
@@ -709,13 +699,24 @@
 <td>Moderno / No AA</td>
 <td>540p</td>
 <td></td>
+</tr>
+<tr>
+<td>Moonlighter</td>
+<td>DirectX 11</td>
+<td>Moderno / No AA</td>
+<td>720p</td>
+<td></td>
+</tr>
+<tr>
+<td>Children of Morta</td>
+<td>DirectX 11</td>
+<td>Retro*  / No AA</td>
+<td>720p</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><code>*</code>: Puede no ser correcto.<br />
-<code>**</code>: La resolución interna se ha calculado calculando el tamaño de los pixeles del juego en una pantalla 1440p.<br />
-    Es posible que haya juegos que mantengan el multiplicador fijo y no la "resolución" del pixel art, aunque sería raro.</p>
+<p><code>*</code>: Puede no ser correcto.  </p>
 <p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
 <p>Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.</p>
 
