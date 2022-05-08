@@ -38,16 +38,6 @@
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-FQ1569YGYJ"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-FQ1569YGYJ",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ1569YGYJ"></script>
-
 
     
     
@@ -435,8 +425,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lista-de-apis-graficas-y-estilos-de-renderizado" class="md-nav__link">
-    Lista de APIs gráficas y Estilos de renderizado
+  <a href="#lista-de-juegos" class="md-nav__link">
+    Lista de Juegos
   </a>
   
 </li>
@@ -530,8 +520,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lista-de-apis-graficas-y-estilos-de-renderizado" class="md-nav__link">
-    Lista de APIs gráficas y Estilos de renderizado
+  <a href="#lista-de-juegos" class="md-nav__link">
+    Lista de Juegos
   </a>
   
 </li>
@@ -573,21 +563,27 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <pre><code>- Los pixeles del juego se alinean a una cuadrícula
 - Similar a como funcionaban antiguamente  
 - Equivalente a renderizar en menor resolución y escalar*  
-    - Este escalado es el que se puede interceptar para eliminar el "Pixel art"
+    - Este escalado es el que se puede interceptar para eliminar el "Pixel art"  
+- Animaciones 3D pixeladas perfectamente
 </code></pre>
 <h5 id="estilo-moderno">Estilo Moderno:</h5>
 <pre><code>- Los pixeles no se alinean  
-- Respetan la resolución de pantalla
+- Respetan la resolución de pantalla  
+- Movimiento suave de cámara
+- Puede ser un juego 3D simulando ser 2D
 </code></pre>
 <p>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado y CRT.  </p>
 <hr />
-<h3 id="lista-de-apis-graficas-y-estilos-de-renderizado">Lista de APIs gráficas y Estilos de renderizado</h3>
+<h3 id="lista-de-juegos">Lista de Juegos</h3>
 <table>
 <thead>
 <tr>
 <th>Juegos</th>
-<th>API</th>
+<th>API gráfica</th>
 <th>Estilo</th>
+<th>Res. Interna**</th>
+<th>Mult. 1440p</th>
+<th>Notas</th>
 </tr>
 </thead>
 <tbody>
@@ -595,31 +591,65 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <td>Stardew Valley</td>
 <td>OpenGL</td>
 <td>Moderno</td>
+<td>360p</td>
+<td>x4</td>
+<td></td>
 </tr>
 <tr>
 <td>Celeste</td>
-<td></td>
+<td>DirectX 11</td>
 <td>Retro</td>
+<td>180p</td>
+<td>x8</td>
+<td>Contiene segmentos en 3D</td>
 </tr>
 <tr>
 <td>Hyper Light Drifter</td>
-<td></td>
+<td>DirectX 10*</td>
 <td>Retro</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>Undertale</td>
 <td></td>
 <td>Moderno</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>Terraria</td>
-<td></td>
+<td>DirectX 9</td>
 <td>Moderno</td>
+<td>360p</td>
+<td>x4</td>
+<td></td>
+</tr>
+<tr>
+<td>Dead Cells</td>
+<td>DirectX 11</td>
+<td>Moderno</td>
+<td>360p</td>
+<td>x4</td>
+<td></td>
+</tr>
+<tr>
+<td>Enter the Gungeon</td>
+<td>DirectX 11</td>
+<td>Moderno</td>
+<td>288p</td>
+<td>x5</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>Para otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.<br />
-Juegos Retro en emuladores, por definición, usan el estilo retro y se benefician de los filtros de escalado.</p>
+<p><code>*</code>: Juegos que no he comprobado personalmente, puede no ser correcto.<br />
+<code>**</code>: La resolución interna se ha calculado calculando el tamaño de los pixeles del juego en una pantalla 1440p.<br />
+    Es posible que haya juegos que mantengan el multiplicador fijo y no la "resolución" del pixel art, aunque sería raro.</p>
+<p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
+<p>Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.</p>
 
               
             </article>
