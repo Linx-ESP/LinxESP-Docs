@@ -8,6 +8,14 @@ Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... 
 !!! question "¿CRT o xBRZ?"
     Debido al efecto que generan ambos filtros no parece que haya beneficio por usar ambos a la vez, pero siéntete libre de probar.
 
+=== "Nativo vs. xBRZ"
+    <iframe frameborder="0" class="juxtapose" width="100%" height="680" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=044918ca-cf03-11ec-b5bb-6595d9b17862"></iframe>
+=== "Nativo vs. CRT"
+=== "xBRZ vs. CRT"
+=== "Nativo vs. Combinado"
+
+---
+
 === "Instalar"
     - [Descarga](https://reshade.me/) y ejecuta el instalador de Reshade
     - Busca el juego o añadelo manualmente. Haz click en `Next`.
