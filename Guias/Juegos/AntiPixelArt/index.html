@@ -398,6 +398,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#una-vez-en-el-juego" class="md-nav__link">
+    Una vez en el juego:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estilo-de-renderizado" class="md-nav__link">
     Estilo de renderizado
   </a>
@@ -419,20 +431,22 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#lista-de-juegos" class="md-nav__link">
-    Lista de Juegos
+  <a href="#sin-antialiasingno-aa-a-veces-llamada-pixel-perfect" class="md-nav__link">
+    Sin Antialiasing/No AA (a veces llamada pixel-perfect)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-juegos" class="md-nav__link">
+    Lista de Juegos
+  </a>
   
 </li>
       
@@ -493,6 +507,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#una-vez-en-el-juego" class="md-nav__link">
+    Una vez en el juego:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estilo-de-renderizado" class="md-nav__link">
     Estilo de renderizado
   </a>
@@ -514,20 +540,22 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#lista-de-juegos" class="md-nav__link">
-    Lista de Juegos
+  <a href="#sin-antialiasingno-aa-a-veces-llamada-pixel-perfect" class="md-nav__link">
+    Sin Antialiasing/No AA (a veces llamada pixel-perfect)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-juegos" class="md-nav__link">
+    Lista de Juegos
+  </a>
   
 </li>
       
@@ -550,31 +578,47 @@
 
 <h1 id="eliminar-pixel-art-wip">Eliminar Pixel Art [WIP]</h1>
 <h2 id="instalar-y-usar-reshade">Instalar y usar Reshade</h2>
-<p><a href="https://reshade.me/">Descargar</a> y ejecutar el instalador de Reshade</p>
-<p>Esperar a que cargue la lista de programas o añadir manualmente el ejecutable del programa. Clicar <code>Next</code>.</p>
-<p>Seleccionar API gráfica [ver más abajo].<br />
-Seleccionar <code>Install</code>.<br />
-En la casilla de abajo sustituir <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code></p>
+<ul>
+<li><a href="https://reshade.me/">Descarga</a> y ejecuta el instalador de Reshade</li>
+<li>Busca el juego o añadelo manualmente. Clica <code>Next</code>.</li>
+<li>Selecciona la API gráfica que corresponda [ver más abajo].  </li>
+<li>Selecciona <code>Install</code>.  </li>
+<li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y clica en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
+<li>Clica <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
+</ul>
+<h3 id="una-vez-en-el-juego">Una vez en el juego:</h3>
 <hr />
-<h3 id="estilo-de-renderizado">Estilo de renderizado</h3>
+<h2 id="estilo-de-renderizado">Estilo de renderizado</h2>
 <p>Básicamente hay "2" maneras de renderizar un juego pixel art.<br />
 <a href="https://www.youtube.com/watch?v=jguyR4yJb1M">Explicación, 3 min.</a>  </p>
 <h5 id="estilo-retro">Estilo Retro:</h5>
 <pre><code>- Los pixeles del juego se alinean a una cuadrícula
 - Similar a como funcionaban antiguamente  
 - Equivalente a renderizar en menor resolución y escalar*  
-    - Este escalado es el que se puede interceptar para eliminar el "Pixel art"  
+    - Este escalado es el que se puede usar para eliminar el "Pixel art"  
 - Animaciones 3D pixeladas perfectamente
 </code></pre>
+<ul>
+<li>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </li>
+</ul>
 <h5 id="estilo-moderno">Estilo Moderno:</h5>
 <pre><code>- Los pixeles no se alinean  
 - Respetan la resolución de pantalla  
 - Movimiento suave de cámara
 - Puede ser un juego 3D simulando ser 2D
 </code></pre>
-<p>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado y CRT.  </p>
+<ul>
+<li>Usar filtros de escalado puede no ser eficaz o generar artefactos en movimiento.</li>
+</ul>
+<h5 id="sin-antialiasingno-aa-a-veces-llamada-pixel-perfect">Sin Antialiasing/No AA (a veces llamada pixel-perfect)</h5>
+<pre><code>- Al escalar a resoluciones grandes el juego no suaviza los bordes
+- Causa que el pixel art parezca no respete la cuadrícula original
+</code></pre>
+<ul>
+<li>Para eliminar el pixel art de un juego retro sin AA, lo mejor es ejecutar el juego en la resolución nativa del pixel art. Es díficil de eliminar a mayor resolución porque no todos los pixeles de los elementos in-game miden lo mismo.</li>
+</ul>
 <hr />
-<h3 id="lista-de-juegos">Lista de Juegos</h3>
+<h2 id="lista-de-juegos">Lista de Juegos</h2>
 <table>
 <thead>
 <tr>
@@ -605,18 +649,18 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 </tr>
 <tr>
 <td>Hyper Light Drifter</td>
-<td>DirectX 10*</td>
+<td>DirectX 9</td>
 <td>Retro</td>
-<td></td>
-<td></td>
+<td>540p</td>
+<td>x2,66</td>
 <td></td>
 </tr>
 <tr>
 <td>Undertale</td>
-<td></td>
+<td>DirectX 9</td>
 <td>Moderno</td>
-<td></td>
-<td></td>
+<td>240p</td>
+<td>x6</td>
 <td></td>
 </tr>
 <tr>
@@ -643,9 +687,33 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <td>x5</td>
 <td></td>
 </tr>
+<tr>
+<td>Moonlighter</td>
+<td>DirectX 11</td>
+<td>Moderno /No AA</td>
+<td>720p</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Children of Morta</td>
+<td>DirecX 11</td>
+<td>Retro* / No AA</td>
+<td>720p</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wildfire</td>
+<td>DirectX 9</td>
+<td>Moderno / No AA</td>
+<td>540p</td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
-<p><code>*</code>: Juegos que no he comprobado personalmente, puede no ser correcto.<br />
+<p><code>*</code>: Puede no ser correcto.<br />
 <code>**</code>: La resolución interna se ha calculado calculando el tamaño de los pixeles del juego en una pantalla 1440p.<br />
     Es posible que haya juegos que mantengan el multiplicador fijo y no la "resolución" del pixel art, aunque sería raro.</p>
 <p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
