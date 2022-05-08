@@ -65,7 +65,8 @@ Al usar resoluciones que no sean múltiplos del Pixel Art del juego ocurrir dos 
     Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado correctamente
 !!! info "Resolución proporcional"
     Para usar un filtro como xBRZ o CRT es recomendable configurar el juego para que use una resolución que sea múltiplo del Pixel Art.  
-    Por ejemplo para Hyper Light Drifter, en vez de usar x2,6667@1440p, jugar a 1080p y usar x2 en los filtros.
+    En caso de que tu pantalla no lo sea, prueba a seleccionar una resolución inferior en el juego y comprueba los resultados:  
+        - En Hyper Light Drifter, en vez de x2,6667 @ 1440p, prueba x2 @ 1080p.
 
 
 
