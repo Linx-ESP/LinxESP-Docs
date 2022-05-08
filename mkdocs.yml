@@ -48,3 +48,22 @@ plugins:
   - tags:
       tags_file: tags.md
 
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret:
+      smart_insert: true
+      insert: true
+      superscript: true
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - def_list
+  - md_in_html
+  - attr_list
+

@@ -208,18 +208,11 @@
   
   
   
-    
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Mkdocs/" class="md-tabs__link md-tabs__link--active">
         Guias
       </a>
     </li>
-  
-
   
 
       
@@ -304,6 +297,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -322,6 +317,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../Mkdocs/" class="md-nav__link">
+        Mkdocs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -329,7 +338,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       
       
@@ -338,13 +347,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_1">
+        <label class="md-nav__link" for="__nav_3_2">
           Juegos
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Juegos" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_1">
+        <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Juegos
         </label>
@@ -398,6 +407,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#una-vez-en-el-juego" class="md-nav__link">
+    Una vez en el juego:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estilo-de-renderizado" class="md-nav__link">
     Estilo de renderizado
   </a>
@@ -406,15 +427,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#estilo-retro" class="md-nav__link">
-    Estilo Retro:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estilo-moderno" class="md-nav__link">
-    Estilo Moderno:
+  <a href="#antialiasing-y-pixel-art" class="md-nav__link">
+    Antialiasing y Pixel Art
   </a>
   
 </li>
@@ -423,16 +437,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lista-de-juegos" class="md-nav__link">
     Lista de Juegos
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -493,6 +502,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#una-vez-en-el-juego" class="md-nav__link">
+    Una vez en el juego:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estilo-de-renderizado" class="md-nav__link">
     Estilo de renderizado
   </a>
@@ -501,15 +522,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#estilo-retro" class="md-nav__link">
-    Estilo Retro:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estilo-moderno" class="md-nav__link">
-    Estilo Moderno:
+  <a href="#antialiasing-y-pixel-art" class="md-nav__link">
+    Antialiasing y Pixel Art
   </a>
   
 </li>
@@ -518,16 +532,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lista-de-juegos" class="md-nav__link">
     Lista de Juegos
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -550,73 +559,112 @@
 
 <h1 id="eliminar-pixel-art-wip">Eliminar Pixel Art [WIP]</h1>
 <h2 id="instalar-y-usar-reshade">Instalar y usar Reshade</h2>
-<p><a href="https://reshade.me/">Descargar</a> y ejecutar el instalador de Reshade</p>
-<p>Esperar a que cargue la lista de programas o añadir manualmente el ejecutable del programa. Clicar <code>Next</code>.</p>
-<p>Seleccionar API gráfica [ver más abajo].<br />
-Seleccionar <code>Install</code>.<br />
-En la casilla de abajo sustituir <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code></p>
+<ul>
+<li><a href="https://reshade.me/">Descarga</a> y ejecuta el instalador de Reshade</li>
+<li>Busca el juego o añadelo manualmente. Haz click en <code>Next</code>.</li>
+<li>Selecciona la API gráfica que corresponda [ver más abajo].  </li>
+<li>Selecciona <code>Install</code>.  </li>
+<li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y haz clock en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
+<li>Haz click en <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
+</ul>
+<h3 id="una-vez-en-el-juego">Una vez en el juego:</h3>
+<ul>
+<li>Pulsa la tecla <code>Home</code> desplegar el overlay de Reshade.</li>
+<li>Selecciona <code>Continue</code> si quieres ver el tutorial (5 pasos), <code>Skip the tutorial</code> si no.</li>
+<li>Activa <code>xBRZx4</code></li>
+<li>En la parte inferior, <code>Strength</code> equivale al multiplicador de escalado.<ul>
+<li>Multiplicador = Resolución vertical del monitor / Resolución de la cuadrícula del pixel art</li>
+<li>Ejemplo: Monitor 2560x1440p en Celeste sería  <ul>
+<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <hr />
-<h3 id="estilo-de-renderizado">Estilo de renderizado</h3>
+<h2 id="estilo-de-renderizado">Estilo de renderizado</h2>
 <p>Básicamente hay "2" maneras de renderizar un juego pixel art.<br />
 <a href="https://www.youtube.com/watch?v=jguyR4yJb1M">Explicación, 3 min.</a>  </p>
-<h5 id="estilo-retro">Estilo Retro:</h5>
-<pre><code>- Los pixeles del juego se alinean a una cuadrícula
-- Similar a como funcionaban antiguamente  
-- Equivalente a renderizar en menor resolución y escalar*  
-    - Este escalado es el que se puede interceptar para eliminar el "Pixel art"  
-- Animaciones 3D pixeladas perfectamente
-</code></pre>
-<h5 id="estilo-moderno">Estilo Moderno:</h5>
-<pre><code>- Los pixeles no se alinean  
-- Respetan la resolución de pantalla  
-- Movimiento suave de cámara
-- Puede ser un juego 3D simulando ser 2D
-</code></pre>
-<p>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado y CRT.  </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Estilo Retro</label><label for="__tabbed_1_2">Estilo Moderno</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Todos los pixeles del juego se alinean en una sola cuadrícula</li>
+<li>Similar a como funcion juegos viejos </li>
+<li>Equivalente a renderizar en menor resolución y <strong>escalar</strong>  <ul>
+<li>Este escalado es el que se puede usar para eliminar el "Pixel art"  </li>
+</ul>
+</li>
+<li>Pixela automáticamente modelos en 3D para mantener la estética</li>
+<li>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Los pixeles no se alinean una cuadrícula </li>
+<li>Respetan la resolución de pantalla  </li>
+<li>Movimiento suave de cámara</li>
+<li>Usar filtros de escalado puede no ser eficaz o generar artefactos en movimiento.</li>
+</ul>
+</div>
+</div>
+</div>
+<h4 id="antialiasing-y-pixel-art">Antialiasing y Pixel Art</h4>
+<p><img alt="Test" src="assets/AA_y_escalado.webp" /></p>
+<p>Al usar resoluciones que no sean múltiplos del Pixel Art del juego ocurrir dos cosas</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Con antialias</label><label for="__tabbed_2_2">Sin antialiasing</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Suaviza los bordes</p>
+</div>
+<div class="tabbed-block">
+<p>Bordes pixelados<br />
+Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado correctamente</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Para usar un filtro como xBRZ es altamente recomendable configurar el juego para que use una resolución que sea múltiplo  </li>
+</ul>
 <hr />
-<h3 id="lista-de-juegos">Lista de Juegos</h3>
+<h2 id="lista-de-juegos">Lista de Juegos</h2>
 <table>
 <thead>
 <tr>
 <th>Juegos</th>
 <th>API gráfica</th>
 <th>Estilo</th>
-<th>Res. Interna**</th>
-<th>Mult. 1440p</th>
+<th>Res. Cuadrícula</th>
 <th>Notas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Stardew Valley</td>
-<td>OpenGL</td>
-<td>Moderno</td>
-<td>360p</td>
-<td>x4</td>
-<td></td>
-</tr>
-<tr>
 <td>Celeste</td>
 <td>DirectX 11</td>
 <td>Retro</td>
 <td>180p</td>
-<td>x8</td>
 <td>Contiene segmentos en 3D</td>
 </tr>
 <tr>
 <td>Hyper Light Drifter</td>
-<td>DirectX 10*</td>
+<td>DirectX 9</td>
 <td>Retro</td>
+<td>540p</td>
 <td></td>
-<td></td>
+</tr>
+<tr>
+<td>Stardew Valley</td>
+<td>OpenGL</td>
+<td>Moderno</td>
+<td>360p</td>
 <td></td>
 </tr>
 <tr>
 <td>Undertale</td>
-<td></td>
+<td>DirectX 9</td>
 <td>Moderno</td>
-<td></td>
-<td></td>
+<td>240p</td>
 <td></td>
 </tr>
 <tr>
@@ -624,7 +672,6 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <td>DirectX 9</td>
 <td>Moderno</td>
 <td>360p</td>
-<td>x4</td>
 <td></td>
 </tr>
 <tr>
@@ -632,7 +679,6 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <td>DirectX 11</td>
 <td>Moderno</td>
 <td>360p</td>
-<td>x4</td>
 <td></td>
 </tr>
 <tr>
@@ -640,14 +686,32 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
 <td>DirectX 11</td>
 <td>Moderno</td>
 <td>288p</td>
-<td>x5</td>
+<td></td>
+</tr>
+<tr>
+<td>Wildfire</td>
+<td>DirectX 9</td>
+<td>Moderno / No AA</td>
+<td>540p</td>
+<td></td>
+</tr>
+<tr>
+<td>Moonlighter</td>
+<td>DirectX 11</td>
+<td>Moderno / No AA</td>
+<td>720p</td>
+<td></td>
+</tr>
+<tr>
+<td>Children of Morta</td>
+<td>DirectX 11</td>
+<td>Retro*  / No AA</td>
+<td>720p</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><code>*</code>: Juegos que no he comprobado personalmente, puede no ser correcto.<br />
-<code>**</code>: La resolución interna se ha calculado calculando el tamaño de los pixeles del juego en una pantalla 1440p.<br />
-    Es posible que haya juegos que mantengan el multiplicador fijo y no la "resolución" del pixel art, aunque sería raro.</p>
+<p><code>*</code>: Puede no ser correcto.  </p>
 <p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
 <p>Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.</p>
 
@@ -668,7 +732,7 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../../../tags/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Tags" rel="prev">
+        <a href="../../Mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Mkdocs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -677,7 +741,7 @@ En la casilla de abajo sustituir <code>Enter ZIP download link to custom reposit
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Tags
+              Mkdocs
             </div>
           </div>
         </a>
