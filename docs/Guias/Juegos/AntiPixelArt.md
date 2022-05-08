@@ -6,13 +6,14 @@ En el caso de juegos Pixel Art, xBRZ es un filtro de escalado que permite mezcla
 Otros filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor resultado).  
 Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... O un filtro que lo imite.
 !!! question "¿CRT o xBRZ?"
-    Debido al efecto que generan ambos filtros no parece que haya beneficio por usar ambos a la vez, pero siéntete libre de probar.
-
-=== "Nativo vs. xBRZ"
-    <iframe frameborder="0" class="juxtapose" width="100%" height="680" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=044918ca-cf03-11ec-b5bb-6595d9b17862"></iframe>
-=== "Nativo vs. CRT"
-=== "xBRZ vs. CRT"
-=== "Nativo vs. Combinado"
+    Debido al efecto que generan ambos filtros no parece que haya beneficio por usar ambos a la vez, pero siéntete libre de probar.  
+  
+=== "Nativo vs. xBRZ"  
+    <iframe frameborder="0" class="juxtapose" width="90%" height="680" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=044918ca-cf03-11ec-b5bb-6595d9b17862"></iframe>  
+=== "Nativo vs. CRT"  
+    <iframe frameborder="0" class="juxtapose" width="90%" height="680" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=b32ad1b2-cf21-11ec-b5bb-6595d9b17862"></iframe>  
+=== "xBRZ vs. CRT"  
+    <iframe frameborder="0" class="juxtapose" width="90%" height="680" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d2e72212-cf21-11ec-b5bb-6595d9b17862"></iframe>  
 
 ---
 
