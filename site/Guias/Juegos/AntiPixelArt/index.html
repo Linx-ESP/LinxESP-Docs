@@ -399,22 +399,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalar-y-usar-reshade" class="md-nav__link">
-    Instalar y usar Reshade
+  <a href="#reshade" class="md-nav__link">
+    Reshade
   </a>
-  
-    <nav class="md-nav" aria-label="Instalar y usar Reshade">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#una-vez-en-el-juego" class="md-nav__link">
-    Una vez en el juego:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -494,22 +481,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalar-y-usar-reshade" class="md-nav__link">
-    Instalar y usar Reshade
+  <a href="#reshade" class="md-nav__link">
+    Reshade
   </a>
-  
-    <nav class="md-nav" aria-label="Instalar y usar Reshade">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#una-vez-en-el-juego" class="md-nav__link">
-    Una vez en el juego:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -558,34 +532,55 @@
 
 
 <h1 id="eliminar-pixel-art-wip">Eliminar Pixel Art [WIP]</h1>
-<h2 id="instalar-y-usar-reshade">Instalar y usar Reshade</h2>
+<h2 id="reshade">Reshade</h2>
+<p>Reshade es una herramienta que permite aplicar filtros de postprocesado, o incluso efectos si puede usar el búfer de profundidad.<br />
+En el caso de juegos Pixel Art, xBRZ es un filtro de escalado que permite mezclar los pixeles mantenieno el estilo artístico.<br />
+Otros filtros similares incluyen ScaleFX (RetroArch) o HQ4x (peor resultado).<br />
+Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... O un filtro que lo imite.</p>
+<div class="admonition question">
+<p class="admonition-title">¿CRT o xBRZ?</p>
+<p>Debido al efecto que generan ambos filtros no parece que haya beneficio por usar ambos a la vez, pero siéntete libre de probar.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Instalar</label><label for="__tabbed_1_2">Usar</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li><a href="https://reshade.me/">Descarga</a> y ejecuta el instalador de Reshade</li>
 <li>Busca el juego o añadelo manualmente. Haz click en <code>Next</code>.</li>
-<li>Selecciona la API gráfica que corresponda [ver más abajo].  </li>
-<li>Selecciona <code>Install</code>.  </li>
+<li>Selecciona la API gráfica que corresponda <a href="#lista-de-juegos">Ver aquí</a>.  </li>
+<li>Selecciona <code>Install</code>.</li>
+<li>Marca <code>RSRetroArch by Matsilagi</code>.</li>
 <li>En la casilla de abajo sustituye <code>Enter ZIP download link to custom repository here</code> por <code>https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip</code> y haz clock en <code>Add</code>. Asegúrate que <code>main.zip</code> está marcado en la lista.</li>
 <li>Haz click en <code>Next</code> para continuar y <code>Finish</code> para acabar.  </li>
 </ul>
-<h3 id="una-vez-en-el-juego">Una vez en el juego:</h3>
+</div>
+<div class="tabbed-block">
 <ul>
 <li>Pulsa la tecla <code>Home</code> desplegar el overlay de Reshade.</li>
 <li>Selecciona <code>Continue</code> si quieres ver el tutorial (5 pasos), <code>Skip the tutorial</code> si no.</li>
 <li>Activa <code>xBRZx4</code></li>
 <li>En la parte inferior, <code>Strength</code> equivale al multiplicador de escalado.<ul>
-<li>Multiplicador = Resolución vertical del monitor / Resolución de la cuadrícula del pixel art</li>
-<li>Ejemplo: Monitor 2560x1440p en Celeste sería  <ul>
-<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong> </li>
+<li>Multiplicador = Resolución vertical del monitor / Resolución del pixel art</li>
+<li>Ejemplo: Monitor 2560x1440p en Celeste sería:<ul>
+<li>1440p (Res. Vertical) / 180p (Res. Celeste) = <strong>x8</strong></li>
 </ul>
 </li>
 </ul>
 </li>
+<li>Alternativamente, activa <code>Advanced CRT</code><ul>
+<li><code>Amount</code>: A gusto</li>
+<li><code>Resolution</code>: Multiplicador (Resolución de pantalla / Resolución del pixel art)</li>
 </ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <hr />
 <h2 id="estilo-de-renderizado">Estilo de renderizado</h2>
 <p>Básicamente hay "2" maneras de renderizar un juego pixel art.<br />
 <a href="https://www.youtube.com/watch?v=jguyR4yJb1M">Explicación, 3 min.</a>  </p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Estilo Retro</label><label for="__tabbed_1_2">Estilo Moderno</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Estilo Retro</label><label for="__tabbed_2_2">Estilo Moderno</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
@@ -596,26 +591,37 @@
 </ul>
 </li>
 <li>Pixela automáticamente modelos en 3D para mantener la estética</li>
-<li>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </li>
 </ul>
+<div class="admonition success">
+<p class="admonition-title">Mejores resultados</p>
+<p>Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado.   </p>
+</div>
 </div>
 <div class="tabbed-block">
 <ul>
 <li>Los pixeles no se alinean una cuadrícula </li>
-<li>Respetan la resolución de pantalla  </li>
+<li>Respeta la resolución de pantalla<ul>
+<li>Con lo que un filtro de escalado como xBRZ no podrá funcionar correctamente  </li>
+</ul>
+</li>
 <li>Movimiento suave de cámara</li>
 <li>Usar filtros de escalado puede no ser eficaz o generar artefactos en movimiento.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Calidad imprevisible</p>
+<p>Juegos con este método puede no ser buenos candidatos a usar xBRZ o filtro de CRT, pudiendo generar parpadeo o artefactos en movimiento o quedando "desenfocados".</p>
+</div>
 </div>
 </div>
 </div>
 <h4 id="antialiasing-y-pixel-art">Antialiasing y Pixel Art</h4>
-<p><img alt="Test" src="assets/AA_y_escalado.webp" /></p>
+<p><img alt="" src="/assets/AA_y_escalado.webp" /></p>
 <p>Al usar resoluciones que no sean múltiplos del Pixel Art del juego ocurrir dos cosas</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Con antialias</label><label for="__tabbed_2_2">Sin antialiasing</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Con antialiasing</label><label for="__tabbed_3_2">Sin antialiasing</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Suaviza los bordes</p>
+<p>Bordes difuminados
+Los pixeles no están definidos, afectando a los filtros como xBRZ</p>
 </div>
 <div class="tabbed-block">
 <p>Bordes pixelados<br />
@@ -623,9 +629,11 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 </div>
 </div>
 </div>
-<ul>
-<li>Para usar un filtro como xBRZ es altamente recomendable configurar el juego para que use una resolución que sea múltiplo  </li>
-</ul>
+<div class="admonition info">
+<p class="admonition-title">Resolución proporcional</p>
+<p>Para usar un filtro como xBRZ o CRT es recomendable configurar el juego para que use una resolución que sea múltiplo del Pixel Art.<br />
+Por ejemplo para Hyper Light Drifter, en vez de usar x2,6667@1440p, jugar a 1080p y usar x2 en los filtros.</p>
+</div>
 <hr />
 <h2 id="lista-de-juegos">Lista de Juegos</h2>
 <table>
@@ -634,7 +642,7 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 <th>Juegos</th>
 <th>API gráfica</th>
 <th>Estilo</th>
-<th>Res. Cuadrícula</th>
+<th>Res. Pixel Art</th>
 <th>Notas</th>
 </tr>
 </thead>
@@ -649,7 +657,7 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 <tr>
 <td>Hyper Light Drifter</td>
 <td>DirectX 9</td>
-<td>Retro</td>
+<td>Retro*</td>
 <td>540p</td>
 <td></td>
 </tr>
@@ -691,29 +699,36 @@ Produce píxeles de distinto tamaño, lo cuál impide usar filtros de escalado c
 <tr>
 <td>Wildfire</td>
 <td>DirectX 9</td>
-<td>Moderno / No AA</td>
+<td>Moderno</td>
 <td>540p</td>
 <td></td>
 </tr>
 <tr>
 <td>Moonlighter</td>
 <td>DirectX 11</td>
-<td>Moderno / No AA</td>
+<td>Moderno</td>
 <td>720p</td>
 <td></td>
 </tr>
 <tr>
 <td>Children of Morta</td>
 <td>DirectX 11</td>
-<td>Retro*  / No AA</td>
+<td>Retro*</td>
 <td>720p</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p><code>*</code>: Puede no ser correcto.  </p>
-<p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.  </p>
+<div class="admonition info encontrar la api gráfica">
+<p class="admonition-title">Info</p>
+<p>Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en <a href="https://store.steampowered.com">Steam</a> a veces aparece) o en <a href="https://www.pcgamingwiki.com">PCGW</a>.<br />
+Otra opción más avanzada es usar el overlay MSI Afterburner / HWinfo64 y mostrar la API</p>
+</div>
+<div class="admonition tip emuladores">
+<p class="admonition-title">Tip</p>
 <p>Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.</p>
+</div>
 
               
             </article>
