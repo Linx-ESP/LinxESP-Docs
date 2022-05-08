@@ -19,25 +19,36 @@ Básicamente hay "2" maneras de renderizar un juego pixel art.
     - Similar a como funcionaban antiguamente  
     - Equivalente a renderizar en menor resolución y escalar*  
         - Este escalado es el que se puede interceptar para eliminar el "Pixel art"  
+    - Animaciones 3D pixeladas perfectamente
 ##### Estilo Moderno:  
     - Los pixeles no se alinean  
     - Respetan la resolución de pantalla  
+    - Movimiento suave de cámara
+    - Puede ser un juego 3D simulando ser 2D
 
 Juegos que sigan el "Estilo Retro" son los que darán mejores resultados con los filtros de escalado y CRT.  
 
 ---
 
-### Lista de APIs gráficas y Estilos de renderizado
+### Lista de Juegos
 
 
 
-| Juegos                | API        | Estilo    |    
-| ---                   | ---        | ---       |
-| Stardew Valley        | OpenGL     | Moderno   |
-| Celeste               | | Retro|
-| Hyper Light Drifter| | Retro|
-| Undertale| | Moderno|
-| Terraria| | Moderno|
+| Juegos                | API gráfica   | Estilo    | Res. Interna**| Mult. 1440p   | Notas |
+| ---                   | ---           | ---       | ---           | ---           | ---   |
+| Stardew Valley        | OpenGL        | Moderno   | 360p          | x4            | |
+| Celeste               | DirectX 11    | Retro     | 180p          | x8            | Contiene segmentos en 3D  |
+| Hyper Light Drifter   | DirectX 10*   | Retro     | | | |
+| Undertale             |               | Moderno   | | | |
+| Terraria              | DirectX 9     | Moderno   | 360p          | x4            | |
+| Dead Cells            | DirectX 11    | Moderno   | 360p          | x4            | |
+| Enter the Gungeon     | DirectX 11    | Moderno   | 288p          | x5            | |
 
-Para otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en [Steam](https://store.steampowered.com) aparece) o en [PCGW](https://www.pcgamingwiki.com).  
-Juegos Retro en emuladores, por definición, usan el estilo retro y se benefician de los filtros de escalado.
+
+`*`: Juegos que no he comprobado personalmente, puede no ser correcto.  
+`**`: La resolución interna se ha calculado calculando el tamaño de los pixeles del juego en una pantalla 1440p.  
+    Es posible que haya juegos que mantengan el multiplicador fijo y no la "resolución" del pixel art, aunque sería raro.
+
+Para la API gráfica de otros juegos se puede buscar en Google, en los requisitos mínimos del juegos (en [Steam](https://store.steampowered.com) a veces aparece) o en [PCGW](https://www.pcgamingwiki.com).  
+
+Juegos retro en emuladores, por definición, usan el estilo retro y se benefician totalmente de los filtros de escalado.
