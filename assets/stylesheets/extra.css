@@ -1,0 +1,131 @@
+:root
+
+/*Para nuevo usar el por defecto y copiar desde Inspeccionar en el navegador*/
+
+/*Colores Primarios | Personalizados*/
+  [data-md-color-primary=linx] {
+    --md-primary-fg-color: #4051b5;
+    --md-primary-fg-color--light: #5d6cc0;  /*nada?*/
+    --md-primary-fg-color--dark: #303fa1;   /*nada?*/
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: hsla(0,0%,100%,.7); 
+  }
+  [data-md-color-primary=coral] {
+    --md-primary-fg-color: #ffb4a5;
+    --md-primary-fg-color--light: #bf0b00;  /*nada?*/
+    --md-primary-fg-color--dark: #ffb4a5;   /*nada?*/
+    --md-primary-bg-color: #680300;
+    --md-primary-bg-color--light: hsla(0,0%,100%,.7); 
+  }
+  [data-md-color-primary=linxrojo] {
+    --md-primary-fg-color: #bf0b00;
+    --md-primary-fg-color--light: #ffffff;   /*nada?*/
+    --md-primary-fg-color--dark: #ffb4a5;    /*nada?*/
+    --md-primary-bg-color: #ffffff;
+    --md-primary-bg-color--light: hsla(0,0%,100%,.7); 
+  }
+
+  /*Colores de Acento | Personalizados*/
+  [data-md-color-accent=coral] {
+    --md-accent-fg-color: #ffb4a5;
+    --md-accent-fg-color--transparent: rgba(245,0,86,.1);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
+  }
+  [data-md-color-accent=antirojo] {
+    --md-accent-fg-color: #625B71;
+    --md-accent-fg-color--transparent: #FFFFFF;
+    --md-accent-bg-color: #FFFFFF;
+    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
+  }
+  [data-md-color-accent=anticoral] {
+    --md-accent-fg-color: #CCC2DC;
+    --md-accent-fg-color--transparent: #332D41;
+    --md-accent-bg-color: #332D41;
+    --md-accent-bg-color--light: hsla(0,0%,100%,.7);
+  }
+
+
+  /*Esquemas de Color | Personalizados*/
+  [data-md-color-scheme=linx-slate] {
+    --md-hue: 232;
+    --md-hue-onbackground: 276; /*#e4e1e6*/
+    --md-default-fg-color: hsla(var(--md-hue-onbackground),9%,90%,1); /*Fuente en fondo*/
+    --md-default-fg-color--light: #938F99;                          /*Fuente más fina*/
+    --md-default-fg-color--lighter: hsla(var(--md-hue-onbackground),9%,90%,0.32);
+    --md-default-fg-color--lightest: #49454F;
+    --md-hue-surface: 240;
+    --md-default-bg-color: #1b1b1f;           /*Equivale a hsl(240,7%,11%)*/             
+    --md-default-bg-color--light: hsla(var(--md-hue-surface),15%,21%,0.54);
+    --md-default-bg-color--lighter: hsla(var(--md-hue-surface),15%,21%,0.26);
+    --md-default-bg-color--lightest: hsla(var(--md-hue-surface),15%,21%,0.07);
+    --md-code-fg-color: hsla(var(--md-hue),18%,86%,1);
+    --md-code-bg-color: hsla(var(--md-hue),15%,15%,1);
+    --md-code-hl-color: rgba(66,135,255,.15);
+    --md-code-hl-number-color: #e6695b;
+    --md-code-hl-special-color: #f06090;
+    --md-code-hl-function-color: #c973d9;
+    --md-code-hl-constant-color: #9383e2;
+    --md-code-hl-keyword-color: #6791e0;
+    --md-code-hl-string-color: #2fb170;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-primary-fg-color);
+    --md-typeset-mark-color: rgba(66,135,255,.3);
+    --md-typeset-kbd-color: hsla(var(--md-hue),15%,94%,0.12);
+    --md-typeset-kbd-accent-color: hsla(var(--md-hue),15%,94%,0.2);
+    --md-typeset-kbd-border-color: hsla(var(--md-hue),15%,14%,1);
+    --md-typeset-table-color: hsla(var(--md-hue),75%,95%,0.12);
+    --md-admonition-bg-color: hsla(var(--md-hue),0%,100%,0.025);
+    --md-footer-bg-color: hsla(var(--md-hue-surface),8%,20%,0.5);
+    --md-footer-bg-color--dark: hsla(var(--md-hue-surface),8%,20%,1);
+  }
+    [data-md-color-scheme=linx-bright] {
+  --md-hue: 5;
+  --md-hue-onbackground: 240; /*#1b1b1f*/
+  --md-default-fg-color: hsl(var(--md-hue-onbackground)7%,11%);                               /*Fuente en fondo*/
+  --md-default-fg-color--light: #79747E;                        /*Fuente más fina*/
+  --md-default-fg-color--lighter: hsla(var(--md-hue-onbackground),9%,90%,0.32);
+  --md-default-fg-color--lightest: #E7E0EC;                      /*Detalles com líneas*/
+  --md-hue-surface: 240;
+  --md-default-bg-color: #ffffff;           /*Equivale a hsl(240,7%,11%)*/             
+  --md-default-bg-color--dark: hsla(var(--md-hue-surface),15%,21%,0.54);
+  --md-default-bg-color--darker: hsla(var(--md-hue-surface),15%,21%,0.26);
+  --md-default-bg-color--darkest: hsla(var(--md-hue-surface),15%,21%,0.07); 
+  --md-code-fg-color: #36464e;
+  --md-code-bg-color: #f5f5f5;
+  --md-code-hl-color: rgba(255,255,0,.5);
+  --md-code-hl-number-color: #d52a2a;
+  --md-code-hl-special-color: #db1457;
+  --md-code-hl-function-color: #a846b9;
+  --md-code-hl-constant-color: #6e59d9;
+  --md-code-hl-keyword-color: #3f6ec6;
+  --md-code-hl-string-color: #1c7d4d;
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+  --md-code-hl-comment-color: var(--md-default-fg-color--light);
+  --md-code-hl-generic-color: var(--md-default-fg-color--light);
+  --md-code-hl-variable-color: var(--md-default-fg-color--light);
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-a-color: var(--md-primary-fg-color);
+  --md-typeset-mark-color: rgba(255,255,0,.5);
+  --md-typeset-del-color: rgba(245,80,61,.15);
+  --md-typeset-ins-color: rgba(11,213,112,.15);
+  --md-typeset-kbd-color: #fafafa;
+  --md-typeset-kbd-accent-color: #fff;
+  --md-typeset-kbd-border-color: #b8b8b8;
+  --md-typeset-table-color: rgba(0,0,0,.12);
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color);
+  --md-footer-fg-color: #fff;
+  --md-footer-fg-color--light: hsla(0,0%,100%,.7);
+  --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
+  --md-footer-bg-color: rgba(0,0,0,.87);
+  --md-footer-bg-color--dark: rgba(0,0,0,.32);
+  }
