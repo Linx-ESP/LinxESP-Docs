@@ -92,8 +92,8 @@
   --md-default-fg-color--light: #79747E;                        /*Fuente más fina*/
   --md-default-fg-color--lighter: hsla(var(--md-hue-onbackground),9%,90%,0.32);
   --md-default-fg-color--lightest: #E7E0EC;                      /*Detalles com líneas*/
-  --md-hue-surface: 240;
-  --md-default-bg-color: #ffffff;           /*Equivale a hsl(240,7%,11%)*/             
+  --md-hue-surface: 300;
+  --md-default-bg-color: hsl(var(--md-hue-surface),100%,99%);           /*#fffbff*/             
   --md-default-bg-color--dark: hsla(var(--md-hue-surface),15%,21%,0.54);
   --md-default-bg-color--darker: hsla(var(--md-hue-surface),15%,21%,0.26);
   --md-default-bg-color--darkest: hsla(var(--md-hue-surface),15%,21%,0.07); 
@@ -126,6 +126,6 @@
   --md-footer-fg-color: #fff;
   --md-footer-fg-color--light: hsla(0,0%,100%,.7);
   --md-footer-fg-color--lighter: hsla(0,0%,100%,.3);
-  --md-footer-bg-color: rgba(0,0,0,.87);
-  --md-footer-bg-color--dark: rgba(0,0,0,.32);
+  --md-footer-bg-color: #322f37;
+  --md-footer-bg-color--dark: #1d1a22;
   }
