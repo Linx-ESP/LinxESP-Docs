@@ -1,24 +1,30 @@
 site_name: Linx Docs
-
+repo_url: https://github.com/Linx-ESP/LinxESP-Docs
+repo_name: Github / Linx-ESP
+edit_uri: ""
 theme:
   language: es
   logo: assets/linx.png
   favicon: assets/linx.png
-
+  icon:
+    repo: fontawesome/brands/github
   name: material
-  palette: 
+  palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate 
-      primary: indigo
-      accent: purple
+      primary: red
+      accent: blue
       toggle:
-        icon: material/brightness-7
-        name: Switch to light mode
+        icon: material/weather-sunny-off
+        name: Cambiar a modo claro
+    
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: red
+      accent: deep purple
       toggle:
-        icon: material/brightness-4
-        name: Switch to dark mode
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
   font:
     text: Roboto
     code: Roboto Mono
@@ -27,9 +33,14 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.top
+#    - navigation.tabs.sticky
+#    - navigation.top
     - navigation.indexes
+    - header.autohide
 #    - toc.integrate #Navegación dentro del archivo. Disable = columna a la derecha
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 extra:
 #  alternate:
@@ -66,4 +77,5 @@ markdown_extensions:
   - def_list
   - md_in_html
   - attr_list
+  - meta
 
