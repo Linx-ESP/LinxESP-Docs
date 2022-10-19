@@ -40,16 +40,6 @@
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Q94MVTWP0F"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-Q94MVTWP0F",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q94MVTWP0F"></script>
-
 
     
     
@@ -1042,6 +1032,13 @@
 </li>
 </ul>
 <h4 id="como-hacer-esta-decision">Cómo hacer esta decisión</h4>
+<pre class="mermaid"><code>graph LR
+  B{Uso};
+  B --&gt;|Especifico| C[NAS o Rack];
+  B --&gt;|Genérico| D{Tamaño};
+  D --&gt;|Necesito mucho espacio| E[Extendida/Supertorre]
+  D ---&gt;|Me da igual| F[Estándar/Semitorre]
+  D --&gt;|Necesito que ocupe poco| G[SFF]</code></pre>
 <ol>
 <li>Rack y NAS, para usos muy específicos  <ol>
 <li>Rack si es para servidor y armario  </li>
