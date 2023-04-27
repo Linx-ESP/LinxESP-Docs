@@ -1,5 +1,4 @@
-
-# Eliminar Pixel Art [WIP]
+# Eliminar Pixel Art
 ## Reshade
 Reshade es una herramienta que permite aplicar filtros de postprocesado, o incluso efectos si puede usar el búfer de profundidad.  
 En el caso de juegos Pixel Art, 2DSCale es un filtro de escalado que permite mezclar los pixeles manteniendo el estilo artístico.  
@@ -14,7 +13,7 @@ Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... 
 === "Instalar"
     - [Descarga](https://reshade.me/) y ejecuta el instalador de Reshade
     - Busca el juego o añadelo manualmente. Haz click en `Next`.
-    - Selecciona la API gráfica que corresponda [Ver aquí](#lista-de-juegos).  
+    - Selecciona la API gráfica que corresponda, [Ver aquí](#lista-de-juegos).  
     - Selecciona `Install`.
     - [Opcional] Marca `RSRetroArch by Matsilagi` si quieres usar el filtro de CRT.
     - En la casilla de abajo sustituye `Enter ZIP download link to custom repository here` por `https://github.com/Linx-ESP/Reshade/archive/refs/heads/main.zip` y haz clock en `Add`. Asegúrate que `main.zip` está marcado en la lista.
@@ -49,7 +48,7 @@ Como alternativa, este estilo se beneficia infinitamente de una pantalla CRT... 
 
 
 ---
-
+# Información adicional (Info opcional)  
 ## Estilo de renderizado 
 Básicamente hay "2" maneras de renderizar un juego pixel art.  
 [Explicación, 3 min.](https://www.youtube.com/watch?v=jguyR4yJb1M)  
@@ -70,7 +69,7 @@ Básicamente hay "2" maneras de renderizar un juego pixel art.
     !!! warning "Calidad imprevisible"
         Juegos con este método puede no ser buenos candidatos a usar xBRZ o filtro de CRT, pudiendo generar parpadeo o artefactos en movimiento o quedando "desenfocados". El filtro 2DScaler debería no tener problemas como este.
 
-#### Antialiasing y Pixel Art  
+#### Antialiasing y Pixel Art (Info opcional)  
 
 ![](/assets/AA_y_escalado.webp)
 
@@ -97,7 +96,7 @@ Al usar resoluciones que no sean múltiplos del Pixel Art del juego ocurrir dos 
 | ---                   | ---           | ---       | ---               | ---   |
 | Celeste               | DirectX 11    | Retro     | 180p      | Contiene segmentos en 3D  |
 | Hyper Light Drifter   | DirectX 9     | Retro*    | 540p      |
-| Stardew Valley        | OpenGL        | Moderno   | 360p      |
+| Stardew Valley        | OpenGL        | Moderno   | ---p      | Zoom hace variar |
 | Undertale             | DirectX 9     | Moderno   | 240p      |
 | Terraria              | DirectX 9     | Moderno   | 360p      |
 | Dead Cells            | DirectX 11    | Moderno   | 360p      |

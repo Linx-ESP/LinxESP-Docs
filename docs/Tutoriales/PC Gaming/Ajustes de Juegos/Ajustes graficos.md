@@ -1,0 +1,68 @@
+# [WIP] Ajustes Gráficos
+!!! warning "Nombres de los ajustes"
+    Puede que en los ajustes del juego las opciones aparezcan con nombres similares o menos descriptivos
+
+---
+#### Sombras
+#### Iluminación
+#### Oclusión ambiental
+
+#### LOD / Level of Detail / Nivel de detalle
+#### AA / Antialising
+Antialiasing es una técnica que intenta minimizar el efecto escalera en los bordes de objetos, producidos por las limitaciones de renderizar en 3D en una pantalla, suavizandolos.  
+
+Distintas técnicas de Antialiasing se diferencia por:  
+
+- Como determinan que píxeles suavizar  
+- Como "mezclan" pixeles para obtener la imaginar suavizada  
+
+Estos métodos también varían en la cantidad de píxeles de referencia que usan, indicado por un multiplicador como `x2`, `x4`, `x8`   
+Más píxeles de referencia causan mejores resultados a cambio de menor rendimiento
+##### Métodos tradicionales
+Mejores resultados a cambio de menor rendimiento.
+Ciertos métodos de renderizado no son compatibles con estos métodos.    
+
+- ``SSAA`` / Super-Sampling  
+    Literalmente renderizar a más resolución (MUY alto coste de rendimiento)  
+    Sustuido por otros métodos y opciones para cambiar la resolución interna  
+- ``MSAA`` / Multi Sampling
+    Limitado a los bordes de los objetos (usando profundidad y otros indicadores)
+    Menor coste de rendmiento que ``SSAA`` al procesar menos veces cada píxel
+    - ``MFAA`` / Multi-Frame  
+        Extra de Nvidia para reducir el coste de rendimiento de ``MSAA``  
+        Se activa desde el panel de control de Nvidia por juego  
+        Puede que elimine renderizado multihilo en DirectX 11, limitando el rendimiento del procesador  
+        No funciona por debajo de 40FPS, y funcionar mejor en resoluciones mayores a 1080p
+##### Métodos de Post Procesado
+Mayor rendimiento a cambio de peor calidad / más borroso.  
+Al implementarse después de que la imagen sea renderizada, puede aplicarse a más efectos (importante para el desarrollador, no usuario).  
+
+- ``FXAA``  
+    Extremadamente barato pero no especialmente bueno (según que versión).  
+    Puede aplicarse encima de ``MSAA``/``TAA`` para terminar de suavizar.  
+- ``SMAA``  
+    Puede inyectarse en "todos" los juegos mediante ReShade (incluso con detección de profundidad).  
+    Bastante mejor calidad que ``FXAA``, pero mayor coste.  
+- ``CMAA``  
+    Situado entre ``FXAA`` y ``SMAA`` en calidad y coste.  
+
+!!! check "Rendimiento"
+    Todas las opciones de Antialiasing por Post Procesado consumen poco, activa lo máximo posible en caso de necesidad
+##### Métodos Temporales
+Menor coste de rendimiento que métodos tradicionales al mantener infomación entre fotogramas.  
+Pueden causar "ghosting" o imagenes borrosas al mantener información entre fotogramas.  
+
+- ``TAA`` / Temporal Antialiasing
+    Término para agrupar varias técnicas o métodos
+    Distintas implementaciones tienen distintos resultados
+- ``TAAX``
+    Gran consumo, al combinar elementos de ``MSAA``
+    Basado en estilo cinemátográfico, conservando ciertos efectos visuales como el granulado
+#### Filtrado Anisotrópico 
+---
+## Recomendaciones
+---
+## Efectos de postprocesado
+#### Bloom
+#### Motion Blur
+#### Aberración cromática

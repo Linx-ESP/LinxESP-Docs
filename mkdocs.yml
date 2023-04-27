@@ -53,6 +53,22 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Linx-ESP
+#  analytics:
+#    provider: google
+#    property: G-Q94MVTWP0F
+#  extra:
+#  consent:
+#    title: Cookie consent
+#    description: 
+#      We use cookies to recognize your repeated visits and preferences, as well
+#      as to measure the effectiveness of our documentation and whether users
+#      find what they're searching for. With your consent, you're helping us to
+#      make our documentation better.
+#    cookies:
+#      analytics:
+#        name: Google Analytics
+#      github:
+#        name: Github
 
 plugins:
   - search
@@ -60,9 +76,16 @@ plugins:
 #      tags_file: tags.md
 
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - admonition
+  - pymdownx.snippets:
+      auto_append:
+        - assets/abbreviations.md
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -71,11 +94,14 @@ markdown_extensions:
       smart_insert: true
       insert: true
       superscript: true
+  - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.keys
   - footnotes
   - def_list
   - md_in_html
   - attr_list
   - meta
+  - abbr
 
