@@ -36,7 +36,8 @@ Versión modificada de Chromium:
 - Añade scripts tipo GreasyMonkey  
 - Reemplazo directo de Chrome  
 - [Más características](https://github.com/bromite/bromite/blob/master/README.md#features)  
-- 
+- Algo peor compatibilidad en ciertas webs.
+
 !!! note Cambiar motor de búsqueda
     Para mayor privacidad pero sin demasiada diferencia, [Brave Search](https://search.brave.com) configurado para regionalizar resultados puede sustituir a Google
 

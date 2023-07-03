@@ -1,4 +1,5 @@
 # Esenciales de Windows
+!!! warning "No actualizado"
     - Está página tiene que ser reformateada y actualizada, no seguir ciegamente
 # Ajustes
 - Asociar tu claves de Windows a tu cuenta de Microsoft | Seguridad y comodidad a cambio de algo de privacidad. [Ver](https://www.microsoft.com/security/blog/2021/09/15/the-passwordless-future-is-here-for-your-microsoft-account/)
@@ -43,8 +44,7 @@
     - IPv4 Activado
     - DNS preferido: 1.1.1.1 [Cloudflare]
     - DNS alternativo: 1.0.0.1
-        - IBM Quad9: 9.9.9.9 | 149.112.112.112
-        - Cisco OpenDNS / Umbrella: 208.67.222.222 | 208.67.220.220
+        - Quad9: 9.9.9.9 | 149.112.112.112
 - Mejor indexación de archivos
     - Ajustes > Buscar > En Windows > Mejorado
         - CPUs modernas y SSD no tienen problemas de rendimiento con esto
@@ -58,29 +58,24 @@
 # Navegador
 Huir de Chrome    
 
-- Edge tiene opción para inicio instantáneo y sigue los materiales/Fluent Design de Windows, pero telemetría de Microsoft  
+- Edge tiene opción para inicio instantáneo y sigue los materiales/Fluent Design de Windows, pero telemetría de Microsoft.  
 - Firefox (único no basado en chromium)  
-- Brave incorpora alguna función no deseada, aunque opcional, no parece mantener el rendimiento 
-- Opera y GX desde que fueron comprados tiene demasiada telemetría y anuncios integrados  
-- Vivaldi, del equipo original de Opera, es la mayor cantidad posible de personalización, pero por defecto puede no ser tan bueno  
-- [Ungoogle Chromium](https://ungoogled-software.github.io/ungoogled-chromium-binaries/) e Iridium: Chrome sin servicios de Google, pegas para usar pero máxima privacidad  
+- Brave incorpora alguna función no deseada, aunque opcional. Peor rendimiento en derivados de chromium.   
+- Opera y GX desde que fueron comprados tiene demasiada telemetría y anuncios integrados.  
+- Vivaldi, del equipo original de Opera. Tiene la mayor cantidad posible de personalización, pero por defecto puede no ser tan bueno.
 ### Extensiones
 - uBlock Origin - Mejor bloqueador de anuncios y ligero
-- [Privacy Badger by EFF](https://privacybadger.org/) - Opciones de privacidad y [Global Privacy Control](https://globalprivacycontrol.org/)
 - [Fast Forward](https://chrome.google.com/webstore/detail/fastforward/icallnadddjmdinamnolclfjanhfoafe) - Salta links intermedios automáticamente
 - SponsorBlock - Bloquea sponsors, promociones, "sub y dale a like" y demás en yt, configurable
 - [Return Dislike Button](https://chrome.google.com/webstore/detail/return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi) - Gracias Youtube por quitar el botón de dislike
 - ViolentMonkey - Permite cargar script para funciones en web, código abierto. Ver Greasy Fork
-- Stylus - permite encontrar y usar temas para webs
 - Bitwarden o cualquier otro gestor de contraseñas
 # Apps
 Mejora la experiencia manteniendo la esencia básica de Windows, nada extravagante:   
 
 - [EarTrumpet](https://www.microsoft.com/es-es/p/eartrumpet/9nblggh516xp?activetab=pivot:overviewtab) - Mejor control de audio de Windows  
-- [Rainmeter](https://www.rainmeter.net) - Personalización con "widget-like", se pueden conseguir en otras [webs](https://www.deviantart.com/search?q=rainmeter)  
-- [Taskbar X](https://chrisandriessen.nl/taskbarx) - Centrar y transparencia de la barra de tareas. Windows 11 incorpora la opción para centrar  
+- [Twinkle Tray](https://twinkletray.com/) - Mejor control de brillo de pantalla, también para escritorio  
 - [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/) - Fondos animados e interactivos. Ver [Lively Wallpaper](https://rocksdanister.github.io/lively/) también  
-- [NanaZip](https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=es-es&gl=ES) - Alternativa a WinRAR y 7zip (basado en 7zip)  
 - [PowerToys](https://github.com/microsoft/PowerToys) - Añade distintas funciones a Windows  
 
 # Otros
