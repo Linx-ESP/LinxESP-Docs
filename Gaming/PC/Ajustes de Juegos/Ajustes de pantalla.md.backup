@@ -1,0 +1,79 @@
+# [WIP] Ajustes de pantalla
+#### Modo de pantalla
+Modo con el que el juego se presenta al sistema operativo
+=== "Ventana"
+    - Se ejecuta en una ventana como cualquier otra app
+    - Permite cambiar rápido de aplicación (alt-tabular)
+    - Menor rendimiento
+    - Mayor latencia
+=== "Ventana sin bordes"
+    - Se ejecuta sin los bordes de título y laterales
+    - Se puede usar ocupando toda la pantalla
+    - Permite cambiar rápido de aplicación (alt-tabular)
+    - Menor rendimiento
+    - Mayor latencia
+=== "Pantalla completa"
+    - Toma control del escritorio [*]
+    - Ocupa toda la pantalla, independientemente de la resolución configurada
+    - Tarda más en cambiar de aplicación (alt-tabular)
+    - Puede causar tirones o similar si se alt-tabula
+    - Mayor rendimiento
+    - Menor latencia  
+    !!! info "Windows vs. Pantalla completa"
+        El modo tradicional de pantalla completa se llama ``Pantalla Completa Exclusiva``, ya que deja control exclusivo de la pantalla al juego.  
+        Microsoft se ha movido con versiones nuevas de Windows a ``FullScreen Optimized``, que convierte automáticamente a algo intermedio a ``Ventana sin bordes``
+
+#### Resolución de pantalla
+- Resolución con la que el juego se presenta al sistema operativo como aplicación
+- Suele combinarse con relación de aspecto (ej. `16:9`, `21:9`)
+#### Resolución interna
+- Resolución con la que el juego renderiza los elementos 3D (menús, interfaz y similar se excluyen)
+- Suele aparecer como un porcentaje de la resolución de pantalla
+- Puede ser más grande que la resolución de la pantalla (actúa como Antialiasing)
+- Menor resolución = Mayor rendimiento
+#### Escalado interno
+- Sólo para juegos que permitan cambiar la resolución interna  
+- Modo en el que el juego escala la resolución interna a la resolución de la aplicación
+=== "Escalado temporal"
+    Consumen más rendimiento a cambio de un mucho mejor efecto  
+    Su calidad puede variar algo según juego, sobre todo ghosting  
+
+    - ``Nvidia DLSS`` o Deep Learning Super Sampling   
+        - Exclusivo de las gráficas Nvidia RTX 20 Series en adelante  
+    - ``AMD FSR 2.0`` o FidelityFX Super Resolution 2.0  
+        - Todas las gráficas pueden usarlo  
+    - ``Intel XeSS``   
+    - ``Unreal Engine TAAU``  
+        - Exclusivo del motor gráfico Unreal Engine
+=== "Escalado espacial"
+    - ``Nvidia NIS``  o Nvidia Image Scaling  
+        - Integrado en el juego (lo normal es FSR) o activar por drivers si tienes una gráfica Nvidia  
+    - ``AMD FSR`` o FidelityFX Super Resolution   
+        - Integrado el juego o activar por drivers si tienes una gráfica AMD (pasa a llamarse Radeon Super Resolution) 
+    !!! warning  "Activar desde el driver"
+        Aunque este ajuste signifique aplicarlo a cualquier juego, significa que también se aplica a elementos como la interfaz  
+        Nvidia actualmente no permite activarlo por juego, solo globalmente  
+        Requieren una configuración alta de Antialiasing
+
+#### Refresh Rate / Frecuencia de actualización
+- Frecuencia al que la pantalla mostrará fotogramas
+- Debería ser igual al del monitor
+- A veces aparece como Resolución@Frecuencia (ej. `1080p@144Hz`)
+#### V-Sync / Sincronización vertical
+- Modo de sincronización de los fotogramas para evitar `Tearing`
+- Contras: latencia extra, tirones (si cae por debajo de la frecuencia puesta)
+    - No son un problema si tu monitor es Freesync / G-Sync
+#### FOV / Campo de visión
+- Grados de visión de la cámara
+- Más grados = Más visión lateral, menor tamaño de la visión central
+
+---
+
+## Recomendaciones
+=== "Con ajuste de resolución interna"  
+    Resolución de pantalla: Resolución de tu pantalla    
+    Resolución interna: Ajustar para rendimiento    
+    Modo de escalado: Escalado temporal > Escalado espacial  
+=== "Sin ajuste de resolución interna"    
+    Resolución de pantalla: Nativa o ajustar para rendimiento (ajustar otras opciones primero)  
+    Usar escalado mediante driver (ver ``Nvidia NIS`` y ``AMD RSR``)
